@@ -1,0 +1,36 @@
+
+.activation{
+    padding-top:80px;
+    height:120vh;
+ }
+ 
+ .activation-center{
+     border:1px solid red;
+     max-width:700px;
+     border-radius:6px;
+     text-align:center;
+     padding:30px 0;
+     position:absolute;
+     top:120px;
+     left:25%;
+     right:25%;
+ 
+ }
+ 
+ .active-div{
+     line-height:40px;
+ }
+ 
+ .active-div h2{
+     color:#38023B;
+ }
+
+
+ /* The section of the media query */
+ @media screen and (max-width:425px){
+     .activation-center{
+         width:100%;
+        left:0;
+        right:0;
+     }
+ }

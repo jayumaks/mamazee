@@ -1,0 +1,86 @@
+.detail {
+  width: 100%;
+  padding: 100px 50px;
+  font-size: 150%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.detail img {
+  max-width: 400px;
+  width: 100%;
+  margin: 20px;
+  height: 450px;
+  object-fit: cover;
+  display: block;
+}
+.box-detail {
+  max-width: 500px;
+  width: 100%;
+  margin: 120px 20px;
+}
+
+.box-detail .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-detail h2 {
+  text-transform: uppercase;
+  color: var(--crimson);
+  letter-spacing: 2px;
+  font-weight: 2rem;
+  font-family: 'Akaya Telivigala', cursive;
+}
+
+.box-detail p {
+  line-height: 1.5;
+  margin: 10px 0;
+  opacity: 0.8;
+  font-size: 15px;
+  color: var(--crimson);
+}
+
+.box-detail span {
+  color: var(--secondary);
+  font-weight: bold;
+}
+
+.box-detail h3 {
+  color: var(--footer);
+}
+.box-detail .carte {
+  background: var(--secondary);
+  color: var(--primary);
+  margin-top: 10px;
+  padding: 10px 25px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.box-detail .carte:hover {
+  background: var(--crimson);
+}
+
+/* The section of the related */
+.related > h2 {
+  background: var(--footer);
+  padding: 10px;
+  color: var(--primary);
+}
+
+/* The section of the media screen */
+@media screen and (max-width: 425px) {
+  .detail {
+    padding: 100px 10px;
+  }
+
+  .box-detail {
+    margin: 20px 10px;
+  }
+}

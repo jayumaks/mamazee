@@ -1,0 +1,35 @@
+.verification{
+   padding-top:80px;
+   height:100vh;
+}
+
+.verified-center{
+    border:1px solid red;
+    max-width:700px;
+    border-radius:6px;
+    text-align:center;
+    padding:30px 0;
+    position:absolute;
+    top:120px;
+    left:25%;
+    right:25%;
+
+}
+
+.verify-div{
+    line-height:40px;
+}
+
+.verify-div h2{
+    color:#38023B;
+}
+
+.verify-div h5{
+    color:crimson;
+    font-size:17px;
+}
+
+.verify-div p{
+    font-family:monospace;
+}
+

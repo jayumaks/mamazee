@@ -1,0 +1,185 @@
+.create_product{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-top:100px;
+}
+
+.upload{
+    max-width: 300px;
+    height: 500px;
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin:0 10px;
+    position: relative;
+    margin-top:-150px;
+}
+
+#file_up{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    outline: none;
+}
+
+#file_up::before{
+    content: "+";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0px;
+    left: 0;
+    background:var(--primary);
+    color:var(--crimson);
+    font-size: 17rem;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+#file_img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+#file_img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+#file_img .span{
+    position: absolute;
+    top: -13px;
+    right: -13px;
+    cursor: pointer;
+    font-size:25px;
+    color:var(--crimson);
+}
+
+
+/* The section of the form */
+.create_product form{
+    max-width: 350px;
+    min-width: 290px;
+    width: 100%;
+    margin: 15px 10px;
+}
+
+.create_product form .row{
+    width: 100%;
+    margin: 15px 0;
+}
+
+.create_product .row label{
+    color:var(--secondary);
+    font-size:14px;
+    margin-left:5px;
+}
+
+.create_product form input, textarea{
+    width: 100%;
+    min-height: 40px;
+    padding: 0 5px; 
+    resize:none;
+}
+
+.text{
+    box-shadow:var(--shadows);
+    border:none;
+    border-radius:15px;
+}
+
+.create_product form button{
+    width: 100%;
+    height: 40px;
+    background:var(--crimson);
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.select{
+    width: 50%;
+    margin: 15px 30px;
+    padding:10px;
+    border:none;
+    background:var(--primary);
+    box-shadow:(--shadows);
+    border-radius:15px;
+    color:var(--crimson);
+    outline:none;
+}
+
+
+
+
+
+
+/* The section of the media query */
+@media screen and (min-width:1050px){
+    .upload{
+        max-width: 450px;
+        height: 500px;
+        width: 100%;
+        padding: 15px;
+        margin:0 20px;
+        position: relative;
+    }
+
+    .create_product form{
+        max-width: 500px;
+        min-width: 290px;
+        width: 100%;
+        margin: 15px 30px;
+    }
+}
+
+
+@media screen and (max-width:690px){
+    .upload{
+        max-width: 450px;
+        height: 500px;
+        width: 100%;
+        margin:0 auto;
+        position: none;
+        margin-top:10px;
+    }
+
+    .create_product form{
+        width: 100%;
+        margin: 15px 0px;
+    }
+}
+
+@media screen and (max-width:425px){
+
+    .create_product{
+        padding:80px 10px;
+    }
+    .upload{
+        max-width:420px;
+    }
+
+    .create_product form{
+        width:100%;
+    }
+
+    #file_img .span{
+        top: -3px;
+        right: -3px;
+        background:var(--crimson);
+        color:var(--primary);
+        padding:10px;
+        font-size:45px;
+    }
+    
+}

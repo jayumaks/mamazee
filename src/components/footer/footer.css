@@ -1,0 +1,122 @@
+    .footer{
+        display:grid;
+        overflow-x: hidden;
+        background:var(--footer);
+        grid-template-columns: repeat(1, 1fr);
+        padding:20px 60px 40px;
+        margin-top:0px;
+    }
+
+    .footer-left{
+        padding:0 20px;
+    }
+
+    .footer-left > h4{
+        color:var(--crimson);
+        font-family:monospace;
+        font-size:18px;
+
+    }
+
+    .footer-left p{
+        color:var(--primary);
+        font-family:Tahoma;
+        font-size:14px;
+    }
+
+    .footer-left .copyright{
+        margin-top:15px;
+        color:var(--lemon);
+        font-size:13px;
+        margin-bottom:20px;
+    }
+
+    /* The section of the footer middle */
+    .footer-middle{
+        padding:0 20px;
+    }
+
+    .footer-middle > h4{
+        color:var(--crimson);
+        font-family:monospace;
+        font-size:18px;
+    }
+
+    .footer-middle p{
+        color:var(--primary);
+        font-family:Tahoma;
+    }
+
+    .footer input {
+        border: none;
+        outline:none;
+        width:100%;
+        margin-top:5px;
+        margin-bottom:20px;
+    }
+    
+        .footer input::placeholder {
+        color: var(--secondary);
+    }
+
+
+    /* The section of the footer right */
+    .footer-right{
+        padding:0 20px;
+        text-align:center;
+    }
+
+    .footer-right > h4{
+        color:var(--crimson);
+        font-family:monospace;
+        font-size:18px;
+    }
+
+    .footer-right p{
+        color:var(--primary);
+        font-family:Tahoma;
+    }
+    
+    .footer-right .icons{
+        color:var(--primary);
+        font-size:18px;
+        display:flex;
+        justify-content:space-evenly;
+        width:50%;
+        margin:20px auto;
+    }
+   
+    .footer-right small{
+        color:var(--lemon);
+        margin-bottom:20px;
+    }
+
+
+    @media screen and (min-width:769px){
+        .footer{
+            grid-template-columns: repeat(3, 1fr);
+            padding:40px 20px 60px;
+            margin-top:50px;    
+        }
+    }
+
+
+    @media screen and (max-width:425px){
+        .footer{
+            padding:20px 15px 40px;
+            text-align:center;    
+        }
+    }
+
+    @media screen and (max-width:375px){
+        .footer{
+            padding:20px 0px 40px;    
+        }
+    }
+
+    @media screen and (max-width:425px){
+        .footer{
+            padding:20px 20px 40px;
+            text-align:center;    
+        }
+    }

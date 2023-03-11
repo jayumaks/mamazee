@@ -1,0 +1,61 @@
+.users{
+    padding:100px 0;
+    height:100%;
+}
+
+.users .users-center{
+    padding:0 10px;
+    flex:1;
+    width:100%;
+}
+
+.users-center h2{
+    font-size:1.7rem;
+    text-transform: uppercase;
+    color:var(--secondary);
+    margin:10px 0;
+    text-align:center;
+    font-family:cursive;
+}
+
+/* The section of the table */
+.customers{
+    border-collapse:collapse;
+    width:100%;
+    border:none;
+}
+
+.customers td,
+.customers th{
+    padding:8px;
+    min-width:100px;
+}
+
+.customers tr:nth-child(even){
+    background:var(--primary);
+}
+
+.customers th{
+    padding-top:12px;
+    padding-bottom:12px;
+    text-align:center;
+    background:var(--secondary);
+    color:var(--primary);
+}
+
+.customers i{
+    cursor:pointer;
+}
+
+.customers .check{
+    color:green;
+}
+
+.customers .times{
+    color:red;
+}
+
+.customers .trash{
+    color:red;
+    cursor:pointer;
+}
